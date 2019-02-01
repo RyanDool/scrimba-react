@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import AppHeader from './components/AppHeader'
+import AppBody from './components/AppBody'
+import AppFooter from './components/AppFooter'
+import './styles/App.css';
 
 
 class App extends Component{
   render() {
     return (
        <div>
-         <h1>Ryan</h1>
-         <p>This is a test paragraph</p>
-         <ul>
-           <li>List item 1</li>
-           <li>List item 2</li>
-           <li>List item 3</li>
-         </ul>
+         <AppHeader />
+         <AppBody />
+         <AppFooter />
        </div>
     );
   }
