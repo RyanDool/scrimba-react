@@ -4,7 +4,13 @@ import '../styles/AppHeader.css';
 class AppHeader extends Component{
     render(){
         return (
-            <header className="navbar">This is the header</header>
+            <header className="navbar">
+                <ul>
+                    <li>Nav Item 1</li>
+                    <li>Nav Item 2</li>
+                    <li>Nav Item 3</li>
+                </ul>
+            </header>
         )
     }
 }
