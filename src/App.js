@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import Joke from './components/Joke'
-import jokesData from "./components/jokesData"
+import Todo from './components/Todoitem'
+import todosData from "./components/todosData"
 import './styles/App.css';
 
 
 class App extends Component{
 	render() {
-		const jokeComponents = jokesData.map(joke => {
-			return (
-				<Joke question={joke.question} punchLine={joke.punchLine} />
-			)
-		})
+		const toDoComponents = todosData.map(item => <Todo key={item.id} todo={item} />)
 		return (
 			<div>
-            	{jokeComponents}          
+            	{toDoComponents}          
         	</div>
 		);
 	}
